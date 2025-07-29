@@ -1,0 +1,109 @@
+
+.App{
+    text-align: center;
+    font-family: Arial, sans-serif;
+    color: #716F81;
+}
+h1{
+    color: #7f6961;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+button{
+    background-color: #967E76;
+    border: 2px solid #8559A5;
+    border-radius: 10px;
+    color: white;
+    height: 40px;
+    width: 100px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 5px 2px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+.input{
+    width: 200px;
+    padding: 10px;
+    margin: 5px 0;
+    border: 2px solid #8559A5;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.tasks-container{
+    display: flex;
+    justify-content: space-around;
+    margin: 30px;
+}
+.incomplete-tasks{
+    background-color: #f0f0f0;
+    padding: 10px;
+    border: 1px solid #8559A5;
+    border-radius: 5px;
+    margin: 10px 0;
+    width: 500px;
+}
+.completed-tasks{
+    background-color: #f0f0f0;
+    padding: 10px;
+    width: 500px;
+    border: 1px solid #8559A5;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+.tasks {
+  background-color:#D7C0AE; 
+  padding: 30px;
+  border-radius: 5px;
+  margin: 10px;
+  margin-bottom: 20px;
+}
+.tasks span {
+  font-size: 22px;
+  color: #4A4A4A;
+  align-items: start;
+}
+
+@media (max-width: 480px) {
+  .App {
+    font-size: 14px;
+    color: #c04e4e;
+    padding: 10px;
+  }
+
+  button {
+    width: 80px;
+    height: 35px;
+    font-size: 14px;
+    margin-left: 3px;
+    padding: 6px 8px;
+  }
+
+  .input {
+    width: 100%;
+    max-width: 280px;
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  .tasks-container {
+    flex-direction: column;
+    margin: 10px 5px;
+    align-items: center;
+  }
+
+  .incomplete-tasks,
+  .completed-tasks {
+    width: 100%;
+    max-width: 320px;
+    margin: 10px 0;
+    padding: 12px 10px;
+    box-sizing: border-box;
+  }
+  .task-list{
+    display: flex;
+    flex-direction: column;
+  }
+}
